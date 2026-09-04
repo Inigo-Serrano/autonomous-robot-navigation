@@ -2,7 +2,7 @@
 
 Autonomous mobile-robot navigation stack built with **ROS 2** and **CoppeliaSim**, combining particle-filter localization, LiDAR perception, PRM/A* path planning, and pure-pursuit control for a simulated TurtleBot3 Burger.
 
-![Particle-filter convergence](docs/images/localization-convergence.png)
+![Particle-filter convergence](docs/images/planned-path.png)
 
 ## What it does
 - **Global localization** via particle filter with DBSCAN-based pose clustering from noisy odometry + LiDAR
