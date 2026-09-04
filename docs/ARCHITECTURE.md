@@ -10,17 +10,17 @@ The project is organized as a set of ROS 2 lifecycle nodes so that localization,
 
 The particle filter starts with particles distributed throughout the free space when global localization is enabled.
 
-![Particle-filter initialization](docs/images/localization-initialization.png)
+![Particle-filter initialization](images/localization-initialization.png)
 
 As odometry and LiDAR measurements are processed, the distribution converges and DBSCAN is used to determine when a reliable pose estimate can be extracted.
 
-![Particle-filter convergence](docs/images/localization-convergence.png)
+![Particle-filter convergence](images/localization-convergence.png)
 
 ### Path planning
 
 Once the robot is localized, the planning node computes a collision-free route to the goal using a **Probabilistic Roadmap (PRM)** and **A\***, then smooths the resulting path before publishing it to the controller.
 
-![Planned and smoothed path](docs/images/planned-path.png)
+![Planned and smoothed path](images/planned-path.png)
 
 > A short CoppeliaSim GIF/video showing the complete navigation sequence can be added here once recorded.
 
